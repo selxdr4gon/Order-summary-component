@@ -1,0 +1,128 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+}
+
+.bg {
+  background-image: url("../images/pattern-background-desktop.svg");
+  background-color: rgba(214, 225, 255, 0.6);
+  width: 100vw;
+  height: 100vh;
+  background-repeat: no-repeat;
+  position: fixed;
+  background-size: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media only screen and (max-width: 600px) {
+  .bg {
+    background-image: url("../images/pattern-background-mobile.svg");
+  }
+}
+
+.box {
+  width: 300px;
+  height: 480px;
+  background-color: white;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+img {
+  width: 300px;
+}
+.container {
+  text-align: center;
+  width: 80%;
+  height: 100%;
+  margin: 0 auto;
+}
+.header {
+  font-size: 1em;
+  font-weight: bolder;
+  color: #001f6d;
+}
+
+.passage {
+  font-size: 0.6em;
+  color: #45516e;
+}
+
+.music-container {
+  width: 100%;
+  border-radius: 5px;
+  background-color: #e6edff;
+  font-size: 0.6em;
+  display: flex;
+  align-items: center;
+  position: relative;
+  margin: 30px auto 0;
+}
+
+.music-icon {
+  width: 50px;
+  height: 50px;
+  margin: 10px;
+}
+.music-detail-header {
+  font-size: 1em;
+  color: #001f6d;
+  font-weight: bold;
+}
+
+.music-detail-passage {
+  font-size: 1em;
+  color: #45516e;
+  margin-top: 5px;
+}
+
+.change-button {
+  position: absolute;
+  right: 10px;
+}
+
+.button-group {
+  width: 100%;
+  margin: 30px auto 0;
+}
+
+.proceed-button {
+  width: 100%;
+  background-color: #1e1fcd;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-style: none;
+  padding: 10px;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+  display: block;
+}
+
+.cancel-button {
+  width: 100%;
+  color: #45516e;
+  text-align: center;
+  display: inline-block;
+  font-size: 0.6em;
+  cursor: pointer;
+  text-decoration: none;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+.proceed-button:hover {
+  opacity: 0.5;
+}
+
+.cancel-button:hover {
+  color: black;
+}
+
+.change-button:hover {
+  text-decoration: none;
+}
